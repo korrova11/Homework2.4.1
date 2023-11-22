@@ -1,4 +1,4 @@
-package pro.sky.java.course2;
+package pro.sky.java.course2.calculator;
 
 import org.junit.jupiter.api.Test;
 import pro.sky.java.course2.calculator.service.api.CalculatorService;
