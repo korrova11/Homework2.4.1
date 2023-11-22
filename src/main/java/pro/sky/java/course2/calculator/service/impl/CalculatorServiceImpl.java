@@ -1,8 +1,8 @@
-package pro.sky.java.course2.calculator;
+package pro.sky.java.course2.calculator.service.impl;
 
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import pro.sky.java.course2.calculator.service.api.CalculatorService;
+
 @Service
 
 public class CalculatorServiceImpl implements CalculatorService {
@@ -26,7 +26,7 @@ public class CalculatorServiceImpl implements CalculatorService {
 
     public String divide(int usnum1, int usnum2) {
         if (usnum2 == 0) {
-            return "Ошибка: на ноль делить нельзя!";}
+            throw new IllegalArgumentException("На ноль делить нельзя!");}
 
         else
                 return usnum1 + " / " + usnum2 + " = " + (usnum1 / usnum2);
