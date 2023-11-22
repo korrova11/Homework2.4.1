@@ -18,6 +18,7 @@ public class FirstController {
         return calculatorService.showWelcome();
     }
 
+
     @GetMapping(path = "/plus")
     public String summa(@RequestParam("num1") int usnum1,@RequestParam("num2")  int usnum2){
         return calculatorService.summa(usnum1,usnum2);
